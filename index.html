@@ -92,7 +92,7 @@
                                 <h4>Over 10 Years Of Experience</h4>
 
 								
-                            </div>
+</div>
 <div class="about-text">
     <h5 style="text-align: justify; text-justify: inter-word;">
         <p>
@@ -108,7 +108,7 @@
     <p>
         Check out more: 
         <a href="#" onclick="openModal()" style="font-weight:bold; text-decoration:underline;">
-            ELSΔ PΔNT
+            ELSA PANT
         </a>
     </p>
 </div>
@@ -123,34 +123,40 @@
     width:100%;
     height:100%;
     background-color:rgba(0,0,0,0.9);
+    overflow:auto;
 ">
 
-    <!-- CLOSE -->
+    <!-- CLOSE BUTTON -->
     <span onclick="closeModal()" style="
-        position:absolute;
+        position:fixed;
         top:20px;
         right:35px;
         color:white;
         font-size:40px;
         cursor:pointer;
+        z-index:10000;
     ">&times;</span>
 
-    <!-- IMAGE -->
-    <img id="cvImage" src="img/cv.png" style="
-        display:block;
-        margin:auto;
-        max-width:90%;
-        max-height:90%;
-        margin-top:40px;
-        cursor:zoom-in;
-        transition:transform 0.3s ease;
-    " onclick="zoomImage(this)">
+    <!-- IMAGE CONTAINER -->
+    <div style="text-align:center; margin-top:60px;">
+        <img id="cvImage" src="img/cv.png" style="
+            max-width:90%;
+            height:auto;
+            cursor:zoom-in;
+            transition:transform 0.3s ease;
+        " onclick="zoomImage(this)">
+    </div>
 </div>
 
 <!-- SCRIPT -->
 <script>
+let zoomed = false;
+
 function openModal() {
     document.getElementById("cvModal").style.display = "block";
+    zoomed = false;
+    document.getElementById("cvImage").style.transform = "scale(1)";
+    document.getElementById("cvImage").style.cursor = "zoom-in";
 }
 
 function closeModal() {
@@ -158,12 +164,14 @@ function closeModal() {
 }
 
 function zoomImage(img) {
-    if (img.style.transform === "scale(2)") {
-        img.style.transform = "scale(1)";
-        img.style.cursor = "zoom-in";
-    } else {
+    if (!zoomed) {
         img.style.transform = "scale(2)";
         img.style.cursor = "zoom-out";
+        zoomed = true;
+    } else {
+        img.style.transform = "scale(1)";
+        img.style.cursor = "zoom-in";
+        zoomed = false;
     }
 }
 </script>
