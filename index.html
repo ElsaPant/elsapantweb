@@ -137,42 +137,23 @@
         z-index:10000;
     ">&times;</span>
 
-    <!-- IMAGE CONTAINER -->
+    <!-- IMAGE -->
     <div style="text-align:center; margin-top:60px;">
-        <img id="cvImage" src="img/cv.png" style="
-            max-width:90%;
+        <img src="img/cv.png" style="
+            max-width:100%;
             height:auto;
-            cursor:zoom-in;
-            transition:transform 0.3s ease;
-        " onclick="zoomImage(this)">
+        ">
     </div>
 </div>
 
 <!-- SCRIPT -->
 <script>
-let zoomed = false;
-
 function openModal() {
     document.getElementById("cvModal").style.display = "block";
-    zoomed = false;
-    document.getElementById("cvImage").style.transform = "scale(1)";
-    document.getElementById("cvImage").style.cursor = "zoom-in";
 }
 
 function closeModal() {
     document.getElementById("cvModal").style.display = "none";
-}
-
-function zoomImage(img) {
-    if (!zoomed) {
-        img.style.transform = "scale(2)";
-        img.style.cursor = "zoom-out";
-        zoomed = true;
-    } else {
-        img.style.transform = "scale(1)";
-        img.style.cursor = "zoom-in";
-        zoomed = false;
-    }
 }
 </script>
 
