@@ -90,19 +90,86 @@
                             <div class="section-header text-left">
                                 <p>About</p>
                                 <h4>Over 10 Years Of Experience</h4>
+
+								
                             </div>
-                            <div class="about-text">
-                                <h5 style="text-align: justify; text-justify: inter-word;">
-               
-<p>I am a dedicated Multimedia Developer & Designer who blends creativity with technical expertise to craft engaging digital experiences. Let's connect and explore how we can work together to bring your ideas to life.</p>
-            </h5>
+<div class="about-text">
+    <h5 style="text-align: justify; text-justify: inter-word;">
+        <p>
+            I am a dedicated Multimedia Developer & Designer who blends creativity with technical expertise to craft engaging digital experiences. Let's connect and explore how we can work together to bring your ideas to life.
+        </p>
+    </h5>
 
- <p>1.BA degree in Computer Science – University Of Essex</p>
+    <p>1. BA degree in Computer Science – University Of Essex</p>
+    <p>2. BA degree in Animation & Interactive Media – Middlesex University</p>
+    <p>3. Master’s degree: ΜSc Computer Games Development, University of East London</p>
 
-<p>2.BA degree in Animation & Interactive Media – Middlesex University</p>
+    <!-- LINK -->
+    <p>
+        Check out more: 
+        <a href="#" onclick="openModal()" style="font-weight:bold; text-decoration:underline;">
+            ELSΔ PΔNT
+        </a>
+    </p>
+</div>
 
-<p>3.Master’s degree: ΜSc Computer Games Development, University of East London</p>
-     </div>
+<!-- MODAL -->
+<div id="cvModal" style="
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.9);
+">
+
+    <!-- CLOSE -->
+    <span onclick="closeModal()" style="
+        position:absolute;
+        top:20px;
+        right:35px;
+        color:white;
+        font-size:40px;
+        cursor:pointer;
+    ">&times;</span>
+
+    <!-- IMAGE -->
+    <img id="cvImage" src="img/cv.png" style="
+        display:block;
+        margin:auto;
+        max-width:90%;
+        max-height:90%;
+        margin-top:40px;
+        cursor:zoom-in;
+        transition:transform 0.3s ease;
+    " onclick="zoomImage(this)">
+</div>
+
+<!-- SCRIPT -->
+<script>
+function openModal() {
+    document.getElementById("cvModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("cvModal").style.display = "none";
+}
+
+function zoomImage(img) {
+    if (img.style.transform === "scale(2)") {
+        img.style.transform = "scale(1)";
+        img.style.cursor = "zoom-in";
+    } else {
+        img.style.transform = "scale(2)";
+        img.style.cursor = "zoom-out";
+    }
+}
+</script>
+
+
+							
 <div class="skills">
     <div class="skill-name">
         <p>Multimedia Design</p><p>100%</p>
