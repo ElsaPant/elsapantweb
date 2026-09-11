@@ -1729,5 +1729,22 @@ body {
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-    </body>
+
+		
+		<script>
+$(window).on('load', function () {
+
+    // Force portfolio layout to recalculate after all images load
+    var $portfolio = $('.portfolio-container');
+
+    if ($portfolio.length) {
+        $portfolio.isotope('layout');
+    }
+
+});
+</script>
+	
+	
+
+	</body>
 </html>
