@@ -86,253 +86,154 @@
 
 
         <!-- About Start -->
-<div class="about wow fadeInUp"
-     data-wow-delay="0.1s"
-     id="about"
-     style="margin:0; padding-top:0;">
-
-    <div class="container-fluid"
-         style="padding:0; margin:0;">
-
-        <div class="row align-items-start"
-             style="margin:0; padding:0;">
-
-            <!-- LEFT IMAGE -->
-            <div class="col-lg-6"
-                 style="padding:0; margin:0;">
-
-                <div class="about-img"
-                     style="margin:0; padding:0; line-height:0; width:100%;">
-
-                    <a href="https://www.youtube.com/watch?v=rUayq21N4Vg"
-                       target="_blank"
-                       style="display:block; margin:0; padding:0;">
-
-                        <img src="img/about.jpg"
-                             alt="Prometheus Animation Project"
-                             style="
-                                display:block;
-                                width:100%;
-                                height:auto;
-                                margin:0;
-                                padding:0;
-                             ">
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <a href="https://www.youtube.com/watch?v=rUayq21N4Vg" target="_blank">
+                        <img src="img/about.jpg" alt="Image">
                     </a>
-
                 </div>
             </div>
 
+            <div class="col-lg-6">
+                <div class="about-content">
 
-            <!-- RIGHT CONTENT -->
-            <div class="col-lg-6"
-                 style="
-                    padding-left:50px;
-                    padding-right:50px;
-                    margin:0;
-                 ">
-
-                <div class="about-content"
-                     style="padding-top:60px;">
-
-                    <!-- HEADER -->
                     <div class="section-header text-left">
                         <p>About</p>
                         <h4>Where Creativity Meets Technology</h4>
                     </div>
 
-
-                    <!-- ABOUT TEXT -->
                     <div class="about-text">
+                        <h5 style="text-align: justify; text-justify: inter-word;">
+                            <p>
+                                I’m a multidisciplinary creative and technology professional combining experience in multimedia, digital production, and end-to-end project delivery with a growing focus on software development and technology. With a background spanning creative production, client collaboration, web and Computer Science, I enjoy turning ideas and complex requirements into practical digital solutions. My work sits at the intersection of technology, creativity, and problem-solving, with interests across software development, digital products, business analysis, creative technology, and project delivery.
+                            </p>
+                        </h5>
 
-                        <p style="
-                            text-align:justify;
-                            text-justify:inter-word;
-                            font-size:17px;
-                            line-height:1.35;
-                        ">
-                            I’m a multidisciplinary creative and technology professional combining experience in multimedia, digital production, and end-to-end project delivery with a growing focus on software development and technology. With a background spanning creative production, client collaboration, web and Computer Science, I enjoy turning ideas and complex requirements into practical digital solutions. My work sits at the intersection of technology, creativity, and problem-solving, with interests across software development, digital products, business analysis, creative technology, and project delivery.
-                        </p>
-
-                        <p>1. BA degree in Computer Science – University of Essex</p>
-
-                        <p>2. BA degree in Animation &amp; Interactive Media – Middlesex University</p>
-
-                        <p>3. Master’s degree: MSc Computer Games Development – University of East London</p>
-
+                        <p>1. BA degree in Computer Science – University Of Essex</p>
+                        <p>2. BA degree in Animation & Interactive Media – Middlesex University</p>
+                        <p>3. Master’s degree: ΜSc Computer Games Development, University of East London</p>
                     </div>
 
+                    <!-- MODAL -->
+                    <div id="cvModal" style="
+                        display:none;
+                        position:fixed;
+                        z-index:9999;
+                        left:0;
+                        top:0;
+                        width:100%;
+                        height:100%;
+                        background-color:rgba(0,0,0,0.9);
+                        overflow:auto;
+                    ">
 
-                    <!-- SKILLS -->
+                        <!-- CLOSE BUTTON -->
+                        <span onclick="closeModal()" style="
+                            position:fixed;
+                            top:20px;
+                            right:35px;
+                            color:white;
+                            font-size:40px;
+                            cursor:pointer;
+                            z-index:10000;
+                        ">&times;</span>
+
+                        <!-- IMAGE -->
+                        <div style="text-align:center; margin-top:60px;">
+                            <img src="img/cv.png" style="
+                                max-width:100%;
+                                height:auto;
+                            ">
+                        </div>
+                    </div>
+
+                    <!-- SCRIPT -->
+                    <script>
+                    function openModal() {
+                        document.getElementById("cvModal").style.display = "block";
+                    }
+
+                    function closeModal() {
+                        document.getElementById("cvModal").style.display = "none";
+                    }
+                    </script>
+
                     <div class="skills">
 
-                        <!-- Skill 1 -->
                         <div class="skill-name">
                             <p>
-                                Creative Technology &amp; Multimedia<br>
+                                Creative Technology & Multimedia<br>
                                 (Motion Graphics • 2D/3D • Graphic Design)
                             </p>
+                            <p></p>
                         </div>
 
                         <div class="progress">
-                            <div class="progress-bar"
-                                 role="progressbar"
-                                 aria-valuenow="100"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
-
-                        <!-- Skill 2 -->
                         <div class="skill-name">
                             <p>
-                                Video Production &amp; Digital Content<br>
+                                Video Production & Digital Content<br>
                                 (Video Editing • Videography • Post-Production)
                             </p>
+                            <p></p>
                         </div>
 
                         <div class="progress">
-                            <div class="progress-bar"
-                                 role="progressbar"
-                                 aria-valuenow="100"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
-
-                        <!-- Skill 3 -->
                         <div class="skill-name">
                             <p>
                                 Digital Project Delivery<br>
                                 (Client Consulting • Planning • Production • End-to-End Delivery)
                             </p>
+                            <p></p>
                         </div>
 
                         <div class="progress">
-                            <div class="progress-bar"
-                                 role="progressbar"
-                                 aria-valuenow="100"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
-
-                        <!-- Skill 4 -->
                         <div class="skill-name">
                             <p>
-                                Product, Business &amp; Systems Analysis<br>
+                                Product, Business & Systems Analysis<br>
                                 (Requirements • UX • Problem Solving • Digital Products)
                             </p>
+                            <p></p>
                         </div>
 
                         <div class="progress">
-                            <div class="progress-bar"
-                                 role="progressbar"
-                                 aria-valuenow="100"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
-
-                        <!-- Skill 5 -->
+                        <!-- Νέα skill χωρίς link πάνω -->
                         <div class="skill-name">
                             <p>
-                                Software &amp; Web Development<br>
-                                (Web &amp; UI/UX • Networks &amp; Systems • AI &amp; Data)
+                                Software & Web Development<br>
+                                (Web & UI/UX • Networks & Systems • AI & Data)
                             </p>
+                            <p></p>
                         </div>
 
                         <div class="progress">
-                            <div class="progress-bar"
-                                 role="progressbar"
-                                 aria-valuenow="100"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
                     </div>
 
-
-                    <!-- GITHUB BUTTON -->
-                    <a class="btn"
-                       href="https://github.com/ElisavetPantelidou?tab=repositories"
-                       target="_blank">
-                        GitHub
-                    </a>
+                    <!-- Το κουμπί τώρα οδηγεί στο GitHub -->
+                    <a class="btn" href="https://github.com/ElisavetPantelidou?tab=repositories" target="_blank">GitHub</a>
 
                 </div>
-                <!-- About Content End -->
-
             </div>
-            <!-- Right Column End -->
-
         </div>
-        <!-- Row End -->
-
     </div>
-    <!-- Container End -->
-
 </div>
-<!-- About End -->
-
-
-<!-- CV MODAL -->
-<div id="cvModal"
-     style="
-        display:none;
-        position:fixed;
-        z-index:9999;
-        left:0;
-        top:0;
-        width:100%;
-        height:100%;
-        background-color:rgba(0,0,0,0.9);
-        overflow:auto;
-     ">
-
-    <!-- CLOSE BUTTON -->
-    <span onclick="closeModal()"
-          style="
-            position:fixed;
-            top:20px;
-            right:35px;
-            color:white;
-            font-size:40px;
-            cursor:pointer;
-            z-index:10000;
-          ">
-        &times;
-    </span>
-
-    <!-- CV IMAGE -->
-    <div style="text-align:center; margin-top:60px;">
-
-        <img src="img/cv.png"
-             alt="CV"
-             style="
-                max-width:100%;
-                height:auto;
-             ">
-
-    </div>
-
-</div>
-
-
-<!-- CV MODAL SCRIPT -->
-<script>
-function openModal() {
-    document.getElementById("cvModal").style.display = "block";
-}
-
-function closeModal() {
-    document.getElementById("cvModal").style.display = "none";
-}
-</script>
    
 		
 		<!-- Experience Start -->
