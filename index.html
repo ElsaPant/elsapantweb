@@ -86,19 +86,42 @@
 
 
         <!-- About Start -->
-<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about-img">
-                    <a href="https://www.youtube.com/watch?v=rUayq21N4Vg" target="_blank">
-                        <img src="img/about.jpg" alt="Image">
+, fix the broken <a> nesting and add inline styles for the spacing:
+
+<!-- About Start -->
+<div class="about wow fadeInUp"
+     data-wow-delay="0.1s"
+     id="about"
+     style="margin-top:0; padding-top:0;">
+
+    <div class="container-fluid" style="padding-left:0; padding-right:0;">
+
+        <div class="row align-items-start" style="margin:0;">
+
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6" style="padding:0;">
+
+                <div class="about-img"
+                     style="margin:0; padding:0; line-height:0;">
+
+                    <a href="https://www.youtube.com/watch?v=rUayq21N4Vg"
+                       target="_blank">
+
+                        <img src="img/about.jpg"
+                             alt="Image"
+                             style="display:block; width:100%; margin:0; padding:0;">
+
                     </a>
+
                 </div>
             </div>
 
-            <div class="col-lg-6">
-                <div class="about-content">
+            <!-- RIGHT CONTENT -->
+            <div class="col-lg-6"
+                 style="padding-left:50px; padding-right:50px;">
+
+                <div class="about-content"
+                     style="padding-top:40px;">
 
                     <div class="section-header text-left">
                         <p>About</p>
