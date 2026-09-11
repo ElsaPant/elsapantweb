@@ -1539,47 +1539,133 @@ $('#portfolioModal').on('show.bs.modal', function (event) {
 
 
  <!-- Footer Start -->
-<div class="footer wow fadeIn" data-wow-delay="0.3s">
-    <div class="container-fluid">
+
+<style>
+    /* Remove unwanted white space around/below footer */
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .footer {
+        margin: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .footer .container-fluid {
+        margin-bottom: 0 !important;
+    }
+
+    .footer .container {
+        margin-bottom: 0 !important;
+    }
+
+    .footer-info {
+        margin-bottom: 0 !important;
+    }
+
+    .footer .copyright {
+        margin-bottom: 0 !important;
+        padding-bottom: 20px !important;
+    }
+
+    .footer .copyright p {
+        margin-bottom: 0 !important;
+    }
+
+    .footer .copyright small {
+        margin-bottom: 0 !important;
+    }
+
+    /* Back to top button must not take up page space */
+    .back-to-top {
+        position: fixed !important;
+        right: 30px !important;
+        bottom: 30px !important;
+        margin: 0 !important;
+        z-index: 9999;
+    }
+</style>
+
+
+<div class="footer wow fadeIn"
+     data-wow-delay="0.3s"
+     style="margin:0; margin-bottom:0;">
+
+    <div class="container-fluid"
+         style="margin-bottom:0;">
+
         <div class="container">
+
             <div class="footer-info">
+
                 <h2>ELSΔ PΔNT</h2>
-                <h3 style="color: white;">
-									Multimedia Developer & Designer<br>
-									Technical & Creative Specialist</h3>
+
+                <h3 style="color:white;">
+                    Multimedia Developer & Designer<br>
+                    Technical & Creative Specialist
+                </h3>
 
                 <div class="footer-menu">
                     <p>elsapantweb@gmail.com</p>
                 </div>
 
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/elsa-pant/" target="_blank">
+
+                    <a href="https://www.linkedin.com/in/elsa-pant/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
                         <i class="fab fa-linkedin-in"></i>
+
                     </a>
+
                 </div>
+
             </div>
+
         </div>
 
-        <div class="container copyright">
-            <p>
-                &copy; <span id="current-year"></span>
-                <a href="#">elsapantweb</a>, All Rights Reserved
 
-                <!-- The author’s attribution link must remain intact in the template. -->
-                <!-- If you wish to remove this credit link, please purchase the Pro Version. -->
+        <!-- COPYRIGHT -->
+        <div class="container copyright"
+             style="margin-bottom:0;">
+
+            <p style="margin-bottom:0;">
+
+                &copy;
+                <span id="current-year"></span>
+
+                <a href="#">elsapantweb</a>,
+                All Rights Reserved
 
                 <br>
+
                 <small>
-    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-</small> 
+                    Designed By
+                    <a href="https://htmlcodex.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        HTML Codex
+                    </a>
+                </small>
+
             </p>
+
         </div>
+
     </div>
+
 </div>
+
 <!-- Footer End -->
 
+
+<!-- Dynamic Copyright Year -->
 <script>
-    document.getElementById("current-year").textContent = new Date().getFullYear();
+    document.getElementById("current-year").textContent =
+        new Date().getFullYear();
 </script>
 		
 
